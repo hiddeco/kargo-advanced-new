@@ -19,7 +19,7 @@ spec:
       # to the ./main directory, and the environment configuration to ./out.
       - uses: git-clone
         config:
-          repoURL: https://github.com/akuity/kargo-advanced.git
+          repoURL: https://github.com/hiddeco/kargo-advanced-new.git
           checkout:
           - branch: main
             path: ./src
@@ -41,7 +41,7 @@ spec:
         config:
           path: ./src/base
           images:
-          - image: ghcr.io/akuity/guestbook
+          - image: ghcr.io/hiddeco/guestbook
       # Build the Kustomize configuration in the ./src directory using the env/dev
       # overlay to the ./out directory.
       - uses: kustomize-build
@@ -66,7 +66,7 @@ spec:
           apps:
           - name: guestbook-dev
             sources:
-            - repoURL: https://github.com/akuity/kargo-advanced.git
+            - repoURL: https://github.com/hiddeco/kargo-advanced-new.git
               desiredCommitFromStep: commit
 ---
 apiVersion: kargo.akuity.io/v1alpha1
@@ -92,7 +92,7 @@ spec:
       # to the ./main directory, and the environment configuration to ./out.
       - uses: git-clone
         config:
-          repoURL: https://github.com/akuity/kargo-advanced.git
+          repoURL: https://github.com/hiddeco/kargo-advanced-new.git
           checkout:
           - branch: main
             path: ./src
@@ -114,7 +114,7 @@ spec:
         config:
           path: ./src/base
           images:
-          - image: ghcr.io/akuity/guestbook
+          - image: ghcr.io/hiddeco/guestbook
       # Build the Kustomize configuration in the ./src directory using the env/staging
       # overlay to the ./out directory.
       - uses: kustomize-build
@@ -139,7 +139,7 @@ spec:
           apps:
           - name: guestbook-staging
             sources:
-            - repoURL: https://github.com/akuity/kargo-advanced.git
+            - repoURL: https://github.com/hiddeco/kargo-advanced-new.git
               desiredCommitFromStep: commit
 ---
 apiVersion: kargo.akuity.io/v1alpha1
@@ -165,7 +165,7 @@ spec:
       # to the ./main directory, and the environment configuration to ./out.
       - uses: git-clone
         config:
-          repoURL: https://github.com/akuity/kargo-advanced.git
+          repoURL: https://github.com/hiddeco/kargo-advanced-new.git
           checkout:
           - branch: main
             path: ./src
@@ -187,7 +187,7 @@ spec:
         config:
           path: ./src/base
           images:
-          - image: ghcr.io/akuity/guestbook
+          - image: ghcr.io/hiddeco/guestbook
       # Build the Kustomize configuration in the ./src directory using the env/ab-test-a
       # overlay to the ./out directory.
       - uses: kustomize-build
@@ -212,7 +212,7 @@ spec:
           apps:
             - name: guestbook-ab-test-a
               sources:
-              - repoURL: https://github.com/akuity/kargo-advanced.git
+              - repoURL: https://github.com/hiddeco/kargo-advanced-new.git
                 desiredCommitFromStep: commit
   verification:
     analysisTemplates:
@@ -242,7 +242,7 @@ spec:
       # to the ./main directory, and the environment configuration to ./out.
       - uses: git-clone
         config:
-          repoURL: https://github.com/akuity/kargo-advanced.git
+          repoURL: https://github.com/hiddeco/kargo-advanced-new.git
           checkout:
           - branch: main
             path: ./src
@@ -264,7 +264,7 @@ spec:
         config:
           path: ./src/base
           images:
-          - image: ghcr.io/akuity/guestbook
+          - image: ghcr.io/hiddeco/guestbook
       # Build the Kustomize configuration in the ./src directory using the env/ab-test-b
       # overlay to the ./out directory.
       - uses: kustomize-build
@@ -289,7 +289,7 @@ spec:
           apps:
           - name: guestbook-ab-test-b
             sources:
-            - repoURL: https://github.com/akuity/kargo-advanced.git
+            - repoURL: https://github.com/hiddeco/kargo-advanced-new.git
               desiredCommitFromStep: commit
   verification:
     analysisTemplates:
@@ -331,7 +331,7 @@ spec:
       # to the ./main directory, and the environment configuration to ./out.
       - uses: git-clone
         config:
-          repoURL: https://github.com/akuity/kargo-advanced.git
+          repoURL: https://github.com/hiddeco/kargo-advanced-new.git
           checkout:
           - branch: main
             path: ./src
@@ -353,7 +353,7 @@ spec:
         config:
           path: ./src/base
           images:
-          - image: ghcr.io/akuity/guestbook
+          - image: ghcr.io/hiddeco/guestbook
       # Build the Kustomize configuration in the ./src directory using the env/prod-west
       # overlay to the ./out directory.
       - uses: kustomize-build
@@ -378,7 +378,7 @@ spec:
           apps:
           - name: guestbook-prod-west
             sources:
-            - repoURL: https://github.com/akuity/kargo-advanced.git
+            - repoURL: https://github.com/hiddeco/kargo-advanced-new.git
               desiredCommitFromStep: commit
 ---
 apiVersion: kargo.akuity.io/v1alpha1
@@ -404,7 +404,7 @@ spec:
       # to the ./main directory, and the environment configuration to ./out.
       - uses: git-clone
         config:
-          repoURL: https://github.com/akuity/kargo-advanced.git
+          repoURL: https://github.com/hiddeco/kargo-advanced-new.git
           checkout:
           - branch: main
             path: ./src
@@ -426,7 +426,7 @@ spec:
         config:
           path: ./src/base
           images:
-          - image: ghcr.io/akuity/guestbook
+          - image: ghcr.io/hiddeco/guestbook
       # Build the Kustomize configuration in the ./src directory using the env/prod-central
       # overlay to the ./out directory.
       - uses: kustomize-build
@@ -451,7 +451,7 @@ spec:
           apps:
           - name: guestbook-prod-central
             sources:
-            - repoURL: https://github.com/akuity/kargo-advanced.git
+            - repoURL: https://github.com/hiddeco/kargo-advanced-new.git
               desiredCommitFromStep: commit
 ---
 apiVersion: kargo.akuity.io/v1alpha1
@@ -477,7 +477,7 @@ spec:
       # to the ./main directory, and the environment configuration to ./out.
       - uses: git-clone
         config:
-          repoURL: https://github.com/akuity/kargo-advanced.git
+          repoURL: https://github.com/hiddeco/kargo-advanced-new.git
           checkout:
           - branch: main
             path: ./src
@@ -499,7 +499,7 @@ spec:
         config:
           path: ./src/base
           images:
-          - image: ghcr.io/akuity/guestbook
+          - image: ghcr.io/hiddeco/guestbook
       # Build the Kustomize configuration in the ./src directory using the env/prod-east
       # overlay to the ./out directory.
       - uses: kustomize-build
@@ -524,5 +524,5 @@ spec:
           apps:
           - name: guestbook-prod-east
             sources:
-            - repoURL: https://github.com/akuity/kargo-advanced.git
+            - repoURL: https://github.com/hiddeco/kargo-advanced-new.git
               desiredCommitFromStep: commit
